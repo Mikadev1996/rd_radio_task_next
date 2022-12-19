@@ -56,11 +56,11 @@ const Radio = () => {
 
     return (
         <div className={styles.container}>
-            <h2>{stations[currentStation].name}</h2>
+            <p>{stations[currentStation].name}</p>
             <div>
-                <img src={stations[currentStation].current_image} alt='song'/>
+                <img className={styles.song_image} src={stations[currentStation].current_image} alt='song'/>
             </div>
-            <h1>{stations[currentStation].current_song}</h1>
+            <h1 className={styles.song_name}>{stations[currentStation].current_song}</h1>
             <p>{stations[currentStation].current_artist}</p>
             <RadioButtons />
 
