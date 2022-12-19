@@ -1,6 +1,14 @@
 import styles from "../styles/Radio.module.scss";
 import {useState} from "react";
 
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faStepBackward} from "@fortawesome/free-solid-svg-icons";
+import {faStepForward} from "@fortawesome/free-solid-svg-icons";
+import {faPlayCircle} from "@fortawesome/free-solid-svg-icons";
+import {faPauseCircle} from "@fortawesome/free-solid-svg-icons";
+import {faShuffle} from "@fortawesome/free-solid-svg-icons";
+
+
 const RadioButtons = ({stations, currentStation, setCurrentStation}) => {
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -47,6 +55,7 @@ const RadioButtons = ({stations, currentStation, setCurrentStation}) => {
     return (
         <div className={styles.container}>
 
+
             <audio id='radio' hidden={true}
                    controls
                    src={stations[currentStation].audio}>
@@ -56,14 +65,18 @@ const RadioButtons = ({stations, currentStation, setCurrentStation}) => {
             </audio>
 
             <div className={styles.buttons_container}>
-                <img onClick={() => prevStation()} className={styles.radio_buttons} src='/previous.png' alt='previous_song'/>
+                <div onClick={() => prevStation()}><FontAwesomeIcon icon={faStepBackward} className={styles.radio_buttons}/></div>
 
-                {isPlaying ? <img className={styles.radio_buttons} src='/pause.png' alt='pause_song' onClick={() => handleRadio()}/> :
-                    <img className={styles.radio_buttons} src='play.png' alt='play_song' onClick={() => handleRadio()}/>}
 
-                <img onClick={() => nextStation()} className={styles.radio_buttons} src='/next.png' alt='next_song'/>
+
+
+                {isPlaying ? <div onClick={() => handleRadio()}><FontAwesomeIcon icon={faPauseCircle} className={styles.radio_buttons}/></div> :
+                             <div onClick={() => handleRadio()}><FontAwesomeIcon icon={faPlayCircle} className={styles.radio_buttons}/></div>
+                    }
+
+                <div onClick={() => nextStation()}><FontAwesomeIcon icon={faStepForward} className={styles.radio_buttons}/></div>
             </div>
-            <img onClick={() => shuffleStation()} id={styles.shuffle} className={styles.radio_buttons} src='/shuffle.png' alt='shuffle_song'/>
+            <div onClick={() => shuffleStation()}><FontAwesomeIcon icon={faShuffle} id={styles.shuffle}/></div>
 
         </div>
     )

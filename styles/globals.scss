@@ -2,8 +2,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 * {
@@ -19,7 +17,13 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   color: var(--text-color);
-  background: linear-gradient(to top, #232526, #2f2f31);
+  background: rgb(48, 48, 48);
+  background: radial-gradient(
+                  circle,
+                  rgba(48, 48, 48, 1) 0%,
+                  rgba(64, 64, 64, 1) 33%,
+                  rgba(48, 48, 48, 1) 100%
+  );
 }
 
 
