@@ -4,6 +4,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 To run a build of this project:
 
+Clone this repository to your local machine.
+Install project dependencies:
+
+```bash
+cd <git-repo-root-dir>
+npm install
+```
+Build and run project:
+
 ```bash
 next build
 
