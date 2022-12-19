@@ -13,6 +13,7 @@ Q) If you had more time, what further improvements or new features would you add
 
     One key thing I would add is testing, I have previously briefly used Jest to test front-end projects so I would use that.
     The styling is also very minimal and did not improve on the given design so I would improve on that given more time.
+    The page doesn't also respond well when it is resized so that is something I would further develop.
 
 Q) Which parts are you most proud of? And why?
     
