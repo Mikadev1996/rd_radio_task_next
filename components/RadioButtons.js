@@ -24,7 +24,11 @@ const RadioButtons = ({stations, currentStation, setCurrentStation}) => {
     }
 
     const shuffleStation = () => {
-        const random = Math.floor(Math.random() * 4)
+        let random;
+        do {
+            random = Math.floor(Math.random() * 4)
+        } while (random === currentStation);
+
         setCurrentStation(random)
         setIsPlaying(false);
     }

@@ -39,12 +39,9 @@ const stations = [
 const Radio = () => {
     const [currentStation, setCurrentStation] = useState(0)
 
-
-
-
     return (
         <div className={styles.container}>
-            <RadioSongInfo currentStation={stations[currentStation]} />
+            <RadioSongInfo currentStation={stations[currentStation]}/>
             <RadioButtons setCurrentStation={setCurrentStation}
                           currentStation={currentStation}
                           stations={stations}
