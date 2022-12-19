@@ -22,8 +22,8 @@ Q) Which parts are you most proud of? And why?
 Q) Which parts did you spend the most time with? What did you find most difficult?
 
     Initally I found just getting the data from the website confusing. 
-    I spent time looking for a way to fetch the artist name/ song picture from the website directly, 
-    which I ended up just grabbing the URL directly and putting it into the stations array of data.
+    I spent time looking for a way to fetch the artist name/ song picture from the website directly.
+    I ended up just grabbing the URLs for the images and text for artist/song names directly and putting it into the array of data.
 
     Outside of getting the data I don't believe I struggled too much on developing the app, thought I did spend some time
     considering how to structure the components.
