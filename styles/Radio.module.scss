@@ -14,6 +14,21 @@
   text-align: center;
 }
 
-.song_artist {
 
+.radio_buttons {
+    width: 55px;
+    height: 55px;
+
+}
+
+.buttons_container {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#shuffle {
+  margin-top: 10px;
+  height: 45px;
 }
