@@ -1,7 +1,6 @@
 import RadioButtons from "./RadioButtons";
 import {useState} from "react";
 import styles from '../styles/Radio.module.scss';
-import next from '../public/next.png';
 import RadioSongInfo from "./RadioSongInfo";
 
 const stations = [
@@ -34,7 +33,6 @@ const stations = [
         current_image: 'https://m.media-amazon.com/images/I/411key4w0jL._SL160_.jpg',
     }
 ]
-
 
 const Radio = () => {
     const [currentStation, setCurrentStation] = useState(0)

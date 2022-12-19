@@ -54,8 +54,6 @@ const RadioButtons = ({stations, currentStation, setCurrentStation}) => {
 
     return (
         <div className={styles.container}>
-
-
             <audio id='radio' hidden={true}
                    controls
                    src={stations[currentStation].audio}>
@@ -67,17 +65,13 @@ const RadioButtons = ({stations, currentStation, setCurrentStation}) => {
             <div className={styles.buttons_container}>
                 <div onClick={() => prevStation()}><FontAwesomeIcon icon={faStepBackward} className={styles.radio_buttons}/></div>
 
-
-
-
                 {isPlaying ? <div onClick={() => handleRadio()}><FontAwesomeIcon icon={faPauseCircle} className={styles.radio_buttons}/></div> :
-                             <div onClick={() => handleRadio()}><FontAwesomeIcon icon={faPlayCircle} className={styles.radio_buttons}/></div>
-                    }
+                             <div onClick={() => handleRadio()}><FontAwesomeIcon icon={faPlayCircle} className={styles.radio_buttons}/></div>}
 
                 <div onClick={() => nextStation()}><FontAwesomeIcon icon={faStepForward} className={styles.radio_buttons}/></div>
             </div>
-            <div onClick={() => shuffleStation()}><FontAwesomeIcon icon={faShuffle} id={styles.shuffle}/></div>
 
+            <div onClick={() => shuffleStation()}><FontAwesomeIcon icon={faShuffle} id={styles.shuffle}/></div>
         </div>
     )
 }
