@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a98973a-501a-44dc-9ffe-6293da73277f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Radio.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/RadioButtons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Radio.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Radio.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671459925591</updated>
       <workItem from="1671459926784" duration="1913000" />
-      <workItem from="1671462713212" duration="1285000" />
+      <workItem from="1671462713212" duration="2210000" />
     </task>
     <servers />
   </component>
